@@ -1,30 +1,3 @@
-# Youtube Masterclass Knex.js
-
-Video: https://youtu.be/U7GjS3FuSkA
-
-Doc: https://www.notion.so/Masterclass-Knex-45d9705a634a4c2b80ac1599585163a6
-
----
-
-## 👀 Pra quem é destinado essa Masterclass?
-
-Iniciantes que conhecem o básico de SQL, Javascript, Node.js, Express e HTTP
-
-Não querem mais escrever SQL na unha
-
-Querem dar o próximo passo no conhecimento, criação e manutenção de banco de dados.
-
-## ❓ O que, pra que e por que?
-
-- Query Builder
-- Construtor de queries SQL com Javascript
-- Callback style or Promise style
-- Multiplas plataformas (PostgreSQL, MySQL, SQLite3...)
-- Agilidade
-- Ajuda em todos os cenários? Não , mas ainda assim você pode escrever raw queries
-- SQL Raw pode ser perigoso se não for feito com cuidado, pode ser feio, e de difícil manutenção
-- Knex vs SQL Raw
-
 ```sql
 knex('users').where('id', 1)
 
@@ -33,16 +6,16 @@ select * from `users` where `id` = 1
 
 ## 👟 Praticar
 
-Vamos criar uma API que irá ter CRUD de usuários e projetos desses usuários.
+Criar uma API que irá ter CRUD de usuários e projetos desses usuários.
 
-**O que preciso para começar?** 
+**Ferramentas Necessárias** 
 
 - Nodejs
 - PostgreSQL
 - VSCode
 - Insomnia ou Postman
 
-- [x]  Revisar um pouco de SQL
+**Sequencia** 
 - [x]  Create Table
 - [x]  Instalar: `npm i knex pg express nodemon`
 - [x]  Create and Config ./knexfile.js with `npx knex init`
@@ -113,12 +86,6 @@ DROP TABLE projects;
 DROP DATABASE knex_test;
 ```
 
-## 🚀 Próximos passos ?
-
-- ⛰ Desafio: Criar o restante do CRUD dos Projects
-- 👓 Conhecer e estudar uma ORM como o Sequelize 
-[https://www.youtube.com/watch?v=Fbu7z5dXcRs](https://www.youtube.com/watch?v=Fbu7z5dXcRs)
-
 ## 🔗 Referências
 
 [http://knexjs.org](http://knexjs.org/#Migrations)
@@ -142,7 +109,3 @@ DROP DATABASE knex_test;
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
-
----
-
-Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
